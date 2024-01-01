@@ -1,0 +1,44 @@
+
+  .movie-container:hover {
+    transform: scale(1.05);
+  }
+
+  .movie-container img {
+    idth: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+
+  }
+
+
+  .movie-date {
+    font-size: 1em;
+    color:#555;
+  }
+
+
+  .movie-details {
+    padding: 16px;
+  }
+  
+  .movie-title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  

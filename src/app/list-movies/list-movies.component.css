@@ -1,0 +1,88 @@
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+  }
+
+
+  .movie-item {
+    background-color: #ddd;
+    width: 300px;
+    margin: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  
+    transform-origin: center;
+  }
+
+  /* General Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Use your preferred font */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+}
+
+.search-container {
+  display: flex;
+}
+
+#search {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+button {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.b1 {
+  background-color: #2dd396;
+}
+
+.b1:hover {
+  background-color: #0b430d;
+}
+
+.favourites {
+  background-color: #ff3385; 
+  margin-left: 10px;
+}
+
+.favourites:hover {
+  background-color: #640941;
+}
+
+.b2{
+  background-color: #271db9; 
+  margin-left: 50px;
+}
+
+.b2:hover {
+  background-color: #5f94ca;
+}
+
+
+  
+  
+  
+
+

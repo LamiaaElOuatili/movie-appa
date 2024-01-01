@@ -1,0 +1,26 @@
+<div class="comment-section">
+  <h2>Comment Section</h2>
+
+  <div class="comment-form">
+    <form id="addCommentForm">
+      <label for="comment">Add a new comment:</label>
+      <textarea id="comment" name="comment" rows="4" [(ngModel)]="searchQuery" required></textarea>
+      <br>
+      <button (click)="saveComment(Movie.id)" type="submit">Add Comment</button>
+    </form>
+  </div>
+
+  <ul class="comment-list" id="commentList">
+    <ul *ngFor="let com of comments">
+    <li *ngIf="com.movie_id === Movie.id">
+        {{ com.comment }}
+    </li>
+    </ul>
+
+  </ul>
+</div>
+
+
+
+
+

@@ -1,0 +1,19 @@
+<div>
+  <div class="header-container">
+    <div class="search-container">
+      <input type="text" id="search" name="search" [(ngModel)]="searchQuery" placeholder="Rechercher...">
+      <button class="b1" (click)="searchMovies()">Search</button>
+    </div>  
+
+    <div>
+      <button class="favourites" alt="" [routerLink]="['/favourites']">My favourites</button>
+    </div>
+  </div>
+  <ul class="movie-list">
+    <li *ngFor="let movie of allMovies" class="movie-item">
+      <app-movie-item [Title]="movie.title" [Id]="movie.id" [Image]="movie.poster_path" [Date]="movie.release_date"></app-movie-item>
+      <button class="b2" (click)="saveFavouriteMovie(movie.title)">Add to Fav</button>
+    </li>
+  </ul>
+</div>
+

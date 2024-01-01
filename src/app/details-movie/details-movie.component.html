@@ -1,0 +1,27 @@
+<div>
+<div *ngFor="let movie of Movies">
+  <div class="custom-movie-container" *ngIf="idMovie == movie.id">
+    <div class="custom-movie-header">
+      <h3>{{ movie.title }}</h3>
+    </div>
+    <div class="custom-movie-content">
+      <div class="custom-movie-image">
+        <img src="https://image.tmdb.org/t/p/w300{{ movie.poster_path }}" alt="{{ movie.title }}">
+      </div>
+      <div class="custom-movie-details">
+        <div class="custom-movie-popularity">
+          <h5>Popularity:</h5>
+          <p>{{ movie.popularity }}</p>
+        </div>
+        <div class="custom-movie-rating">
+          <h3>Rating: {{ movie.vote_average }}/10</h3>
+        </div>
+        <div class="custom-movie-overview">
+          <h4>{{ movie.overview }}</h4>
+        </div>
+      </div>
+    </div>
+    <app-review [Movie]="movie"></app-review>
+  </div>
+</div>
+</div>
